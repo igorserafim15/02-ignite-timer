@@ -1,9 +1,10 @@
-import { Routes, Route } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import { DefaultLayout } from './layouts/DefaultLayout'
-import { History } from './views/History'
-import { Home } from './views/Home'
+import { History } from './pages/History'
 
-export const Router = () => {
+import { Home } from './pages/Home'
+
+export function Router() {
   return (
     <Routes>
       <Route path="/" element={<DefaultLayout />}>

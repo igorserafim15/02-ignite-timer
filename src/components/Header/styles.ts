@@ -2,16 +2,16 @@ import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 
   nav {
     display: flex;
-    gap: 0.8rem;
+    gap: 0.5rem;
 
     a {
-      width: 4.8rem;
-      height: 4.8rem;
+      width: 3rem;
+      height: 3rem;
 
       display: flex;
       justify-content: center;
@@ -27,7 +27,7 @@ export const HeaderContainer = styled.header`
       }
 
       &.active {
-        color: ${(props) => props.theme['green-500']} !important;
+        color: ${(props) => props.theme['green-500']};
       }
     }
   }
